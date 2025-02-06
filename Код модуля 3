@@ -1,0 +1,82 @@
+_______________________________________________________
+#include <iostream>
+// //     int main() {
+// // std:: string aim;
+// // int total = 0;
+// // int money;
+
+// // std:: cout << "Давай копить!\n";
+// // std:: cout << "\n";
+// // std:: cout << "А на что? Введите цель и нажмите ENTER ";
+// // std:: cin >> aim;
+// // std:: cout << "Sum 1: ";
+// // std:: cin >> money;
+// // total += money;
+// // std:: cout << "Sum 2: ";
+// // std:: cin >> money;
+// // total = total + money;
+// // std:: cout << "Sum 3: ";
+// // std:: cin >> money;
+// // total = total + money;
+// // std:: cout << "Sum 4: ";
+// // std:: cin >> money;
+// // total = total + money;
+// // std:: cout << "Sum 5: ";
+// // std:: cin >> money;
+// // total = total + money;
+// // std:: cout << "==========\n";
+// // std:: cout << "Ты накопил на: " << aim << ". Получилось " << total << " рублей";
+// // }
+
+    
+// // #include <iostream>
+
+// // int main() {
+
+// // std:: string userLogin;
+// // std:: string userPassword;
+
+// // std:: cout << "Введите логин: \n";
+// // std:: cin >> userLogin;
+// // std:: cout << "\n";
+// // std:: cout << "Введите пароль: \n";
+// // std:: cin >> userPassword;
+// // std:: cout << "\n";
+// // std:: cout << userLogin << ", you are successfuly logged in!";
+// // }
+
+    
+// // std:: string playerName;
+// // std:: string playerRace;
+// // std:: cout << "Enter your name: \n";
+// // std:: cin >> playerName;
+// // std:: cout << "Enter your race: \n";
+// // std:: cin >> playerRace;
+// // std:: cout << "The new, " << playerRace << " was born! His name is " << playerName << ". Your are welcome in this harsh world!\n";
+// // }
+
+
+
+
+// //     int productCost;
+// //     int deliveryCost = 600;
+// //     int discount = 500;
+
+// //     int price = deliveryCost - discount;
+
+// //     std:: cout << "Введите стоимость товара и нажмите клавишу ENTER: ";
+// //     std:: cin >> productCost;
+// //     std::cout << "Стоимость товара: " << productCost << "\n";
+// //     std::cout << "Стоимость доставки: " << deliveryCost << "\n";
+// //     std::cout << "Скидка: " << discount << "\n";
+// //     std::cout << "---------\n";
+// //     std::cout << "Итого: " << price + productCost << "\n";
+// // }
+
+// // int a;
+// // std:: cout << "Эта программа поможет вам находить квадрат числа. Следуйте инструкции";
+// // std::cout << "\n";
+// // std:: cout << "Введите число и нажмите клавишу ENTER: ";
+// // std:: cin >> a;
+// // std:: cout << "Квадрат числа " << a << " равен " << a * a;
+// // }
