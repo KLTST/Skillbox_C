@@ -56,3 +56,35 @@ std:: cout << "Ваша скидка составит: " << discount << " руб
 // std::cout << "\n";
 // std:: cout << "Каждая квартира должна платить по " << flatSumToPay << " рублей.";
 // }
+
+#include <iostream>
+
+int main() {
+ 
+  int round = 4;
+  int enginePower = 254;
+  int wheelsPower = 93;
+  int rudderPower = 49;
+  int windPower = 21;
+  int rainPower = 17;
+  int speedKMh = enginePower + wheelsPower + rudderPower - windPower - rainPower;
+  
+    std::cout << "===================\n";
+    std::cout << "Супер гонки. Круг "<< round << "\n";
+    std::cout << "===================\n";
+    std::cout << "Шумахер" << " (" << speedKMh << ")" << "\n";
+    std::cout << "===================\n";
+    std::cout << "Водитель: Шумахер\n";
+    std::cout << "Скорость: " << speedKMh << "\n";
+    std::cout << "-------------------\n";
+    std::cout << "Оснащение\n";
+    std::cout << "Двигатель: +" << enginePower << "\n";
+    std::cout << "Колеса: +" << wheelsPower << "\n";
+    std::cout << "Руль: +" << rudderPower << "\n";
+    std::cout << "-------------------\n";
+    std::cout << "Действия плохой погоды:\n";
+    std::cout << "Ветер: -" << windPower << "\n";
+    std::cout << "Дождь: -" << rainPower << "\n";
+
+}
+
