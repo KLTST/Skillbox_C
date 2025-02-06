@@ -1,0 +1,21 @@
+#include <iostream>
+int main() {
+std:: cout << "Бамбук против Вредителей\n";
+std:: cout << "\n";
+
+int days;
+int midDayIndex;
+int startHight = 100;
+int dailyGrowth = 50;
+int nightLoss = 20;
+std:: string midName;
+
+std:: cout << "Укажите количество целых дней: \n";
+std:: cin >> days;
+std:: cout << "Если вы хотите посчитать рост бамбука на середину заданного дня, то введите 1; в обратном случае - 0 \n";
+std:: cin >> midDayIndex;
+int result = startHight + (dailyGrowth - nightLoss) * days + midDayIndex*dailyGrowth / 2;
+std:: cout << "Если вы хотите посчитать рост бамбука на середину заданного дня, то введите <середину>; в обратном случае - <конец> \n";
+std:: cin >> midName;
+std:: cout << "На " << midName << " " << days <<  " дня высота бамбука: " << result;
+}
