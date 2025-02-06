@@ -1,73 +1,81 @@
 #include <iostream>
 
-int main() {
-std:: cout << "Симулятор маршрутки\n";
-std:: cout << "\n";
-std:: string stopSound = "Автобус прибыл на остановку: ";
-    std:: string stopName1 = "Проспект Понедельника \n";
-    std:: string stopName2 = "Улица Вторника \n";
-    std:: string stopName3 = "Площадь Среды \n";
-    std:: string stopName4 = "Переулок Четверга \n";
-    // std:: string stopName5 = "Тупик Пятницы \n";
-    // std:: string stopName6 = "Субботнее поле \n";
-std:: string startSound = "Автобус отправляется с остановки: ";
-std:: string moving  = "-----Едем-----";
-std:: string passangers = "В салоне пассажиров: ";
-std:: string countOutText = "Сколько пассажиров вышло на остановке? ";
-std:: string countInText = "Сколько пассажиров зашло на остановке? ";
+int main() 
+{
+    std:: cout << "Симулятор маршрутки\n";
+    std:: cout << "\n";
+    std:: string stopSound =         "Автобус прибыл на остановку: ";
+        std:: string stopName1 =     "Проспект Понедельника \n";
+        std:: string stopName2 =     "Улица Вторника \n";
+        std:: string stopName3 =     "Площадь Среды \n";
+        std:: string stopName4 =     "Переулок Четверга \n";
+        // std:: string stopName5 =  "Тупик Пятницы \n";
+        // std:: string stopName6 =  "Субботнее поле \n";
+    std:: string startSound =        "Автобус отправляется с остановки: ";
+    std:: string moving  =           "-----Едем-----";
+    std:: string passangers =        "В салоне пассажиров: ";
+    std:: string countOutText =      "Сколько пассажиров вышло на остановке? ";
+    std:: string countInText =       "Сколько пассажиров зашло на остановке? ";
     int countOutNum;
     int countInNum;
     int passangerNum = 0;
     int passangerSum = 0;
 
-std:: cout << stopSound << stopName1 << passangers << passangerNum << "\n";
-std:: cout << countOutText;
-std:: cin >> countOutNum;
-std:: cout << countInText;
-std:: cin >> countInNum;
-passangerNum = passangerNum - countOutNum + countInNum;
-passangerSum = passangerSum + countInNum;
-std:: cout << startSound << stopName1 << passangers << passangerNum;
-std:: cout << "\n" << moving << "\n";
+    std:: cout << stopSound << stopName1 << passangers << passangerNum << "\n";
+    std:: cout << countOutText;
+    std:: cin >> countOutNum;
+    std:: cout << countInText;
+    std:: cin >> countInNum;
+    passangerNum = passangerNum - countOutNum + countInNum;
+    passangerSum = passangerSum + countInNum;
+    std:: cout << startSound << stopName1 << passangers << passangerNum;
+    std:: cout << "\n" << moving << "\n";
 
-std:: cout << stopSound << stopName2 << passangers << passangerNum << "\n";
-std:: cout << countOutText;
-std:: cin >> countOutNum;
-std:: cout << countInText;
-std:: cin >> countInNum;
-passangerNum = passangerNum - countOutNum + countInNum;
-passangerSum = passangerSum + countInNum;
-std:: cout << startSound << stopName2 << passangers << passangerNum;
-std:: cout << "\n" << moving << "\n";
+    std:: cout << stopSound << stopName2 << passangers << passangerNum << "\n";
+    std:: cout << countOutText;
+    std:: cin >> countOutNum;
+    std:: cout << countInText;
+    std:: cin >> countInNum;
+    passangerNum = passangerNum - countOutNum + countInNum;
+    passangerSum = passangerSum + countInNum;
+    std:: cout << startSound << stopName2 << passangers << passangerNum;
+    std:: cout << "\n" << moving << "\n";
 
-std:: cout << stopSound << stopName3 << passangers << passangerNum << "\n";
-std:: cout << countOutText;
-std:: cin >> countOutNum;
-std:: cout << countInText;
-std:: cin >> countInNum;
-passangerNum = passangerNum - countOutNum + countInNum;
-passangerSum = passangerSum + countInNum;
-std:: cout << startSound << stopName3 << passangers << passangerNum;
-std:: cout << "\n" << moving << "\n";
+    std:: cout << stopSound << stopName3 << passangers << passangerNum << "\n";
+    std:: cout << countOutText;
+    std:: cin >> countOutNum;
+    std:: cout << countInText;
+    std:: cin >> countInNum;
+    passangerNum = passangerNum - countOutNum + countInNum;
+    passangerSum = passangerSum + countInNum;
+    std:: cout << startSound << stopName3 << passangers << passangerNum;
+    std:: cout << "\n" << moving << "\n";
 
-std:: cout << stopSound << stopName4 << passangers << passangerNum << "\n";
-std:: cout << countOutText;
-std:: cin >> countOutNum;
-std:: cout << countInText;
-std:: cin >> countInNum;
-passangerNum = passangerNum - countOutNum + countInNum;
-passangerSum = passangerSum + countInNum;
-std:: cout << startSound << stopName4 << passangers << passangerNum;
-std:: cout << "\n" << moving << "\n";
+    std:: cout << stopSound << stopName4 << passangers << passangerNum << "\n";
+    std:: cout << countOutText;
+    std:: cin >> countOutNum;
+    std:: cout << countInText;
+    std:: cin >> countInNum;
+    passangerNum = passangerNum - countOutNum + countInNum;
+    passangerSum = passangerSum + countInNum;
+    std:: cout << startSound << stopName4 << passangers << passangerNum;
+    std:: cout << "\n" << moving << "\n";
 
     
-std:: cout << "=============== \n";
-    int ticketPrice = 20;
-    int totalMoney = passangerSum * ticketPrice;
-    int driverSalary = totalMoney / 4;
-    int benzoCost = totalMoney / 5;
-    int taxes = totalMoney / 5;
-    int repairCost = totalMoney / 5;
-    int profit = totalMoney - driverSalary - benzoCost - taxes - repairCost;
-std:: cout << "Всего заработали: " << totalMoney << " руб. \n" << "Зарплата водителя: " << driverSalary << " руб. \n" << "Расходы на топливо: " << benzoCost << " руб. \n" << "Налоги: " << taxes << " руб. \n" << "Расходы на ремонт машины: " << repairCost << " руб. \n" << "Итого доход: " << profit << " руб. \n";
+    std:: cout << "=============== \n";
+    int ticketPrice =    20;
+    int totalMoney =     passangerSum * ticketPrice;
+    int driverSalary =   totalMoney / 4;
+    int benzoCost =      totalMoney / 5;
+    int taxes =          totalMoney / 5;
+    int repairCost =     totalMoney / 5;
+    int profit =         totalMoney - driverSalary - benzoCost - taxes - repairCost;
+    
+    std:: cout 
+    << "Всего заработали: " << totalMoney << " руб. \n" 
+    << "Зарплата водителя: " << driverSalary << " руб. \n"
+    << "Расходы на топливо: " << benzoCost << " руб. \n"
+    << "Налоги: " << taxes << " руб. \n"
+    << "Расходы на ремонт машины: " << repairCost << " руб. \n"
+    << "Итого доход: " << profit << " руб. \n";
 }
