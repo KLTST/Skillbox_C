@@ -1,0 +1,58 @@
+#include <iostream>
+
+int main() {
+    
+int price = 5000;
+int delivery = 400;
+int discount = 50;
+int total = price + delivery - discount;
+
+std:: cout << "Ваша скидка составит: " << discount << " рублей. Стоимость товара со скидкой и доставкой: " << total << " рублей.";
+}
+
+
+
+
+
+// #include <iostream>
+
+// int main() {
+
+// int orderReceivingT = 2;
+// int orderPickingT = 4;
+// int orderTime = orderReceivingT + orderPickingT;
+// int workingTh = 8;
+// int workingTm = workingTh * 60; 
+// int clientsCount = workingTm / orderTime;
+
+// std:: cout << "Программа рассчитывает количество клиентов (заказов), которое кассир может обработать за одну смену\n";
+// std:: cout << "Введите продолжительность смены: " << workingTm << " минут. \n";
+// std:: cout << "Введите время на получение заказа: " << orderReceivingT << " минуты. \n";
+// std:: cout << "Введите время на выдачу заказа: " << orderPickingT << " минуты. \n";
+// std:: cout << "Таким образом, количество клиентов, которое кассир обработает...\n";
+//   std:: cout << "...еще секунду...\n";
+//   std:: cout << "За смену длинной " << workingTm << " минут кассир обработает " << clientsCount << " клиентов.\n";  
+// }
+
+
+
+
+
+// #include <iostream>
+
+// int main() {
+// int totalSumToPay = 4000000;
+// int entranceCount = 10;
+// int flatCount = 40;
+// int flatSumToPay = totalSumToPay / (entranceCount * flatCount);
+
+// std:: cout << "Приветствуем вас в калькуляторе квартплаты!" << "\n";
+// std:: cout << "\n";
+// std:: cout << "Введите указанную в квитанции сумму: " << totalSumToPay << "\n";
+// std:: cout << "Сколько подъездов в вашем доме? " << entranceCount << "\n";
+// std:: cout << "Сколько квартир в каждом подъезде? " << flatCount << "\n";
+// std:: cout << "\n";
+// std:: cout << "----Считаем-----" << "\n";
+// std::cout << "\n";
+// std:: cout << "Каждая квартира должна платить по " << flatSumToPay << " рублей.";
+// }
