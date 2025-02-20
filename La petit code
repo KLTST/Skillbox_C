@@ -1,0 +1,132 @@
+// // #include <iostream>
+
+// // int main() {
+// // int productA;
+// // int productB;
+// // int productC;
+// // int sumToPay;
+
+// //   std:: cout << "Введите стоимость первого товара: ";
+// //   std:: cin >> productA;
+// //   std:: cout << "Введите стоимость второго товара: ";
+// //   std:: cin >> productB;
+// //   std:: cout << "Введите стоимость третьего товара: ";
+// //   std:: cin >> productC;
+
+// // if (productA + productB + productC > 10000) 
+// // {
+// //   sumToPay = (productA + productB + productC) * 0.9;
+// //   std:: cout << "Вы получили скидку 10%. Сумма чека: " <<       sumToPay;
+// // }
+// // if (productA + productB + productC <= 10000) 
+// // {
+// //     std:: cout << "Сумма чека: " << productA + productB +        productC;
+// // }
+// // }
+
+
+
+// Автомобиль выехал из Москвы в Рязань. Напишите программу, которая вычисляет сумеет ли добраться автомобиль до Рязани за два часа с заданной пользователем средней скоростью движения. Программа должна выводить вычисленное расстояние, а если автомобиль сумеет добраться до Рязани, - сообщение “Вы приехали”. Расстояние между городами - 200 км.
+
+//   #include <iostream>
+
+//   int main() {
+//   int speed;
+//   std:: cout << "А до Рязани доедет?\n";
+//   std:: cout << "\n";
+//   std:: cout << "Введите скорость автомобиля в км/ч и нажмите ENTER: ";
+//   std:: cin >> speed;
+//   int longLonesomeRoad = speed * 2;
+//   std:: cout << "Со скоростью " << speed << "км/ч за 2 часа автомобиль проедет " << longLonesomeRoad << " км.\n";
+
+// if (longLonesomeRoad >= 200) {
+//   std:: cout << "\n";
+//   std:: cout << "Вы приехали!\n";
+// }
+//   }
+
+// Напишите программу, которая вычисляет модуль числа.
+
+// Подсказка: чтобы обратить знак числа в переменной ‘x’ надо писать вот так: x = - x.
+
+//   #include <iostream>
+
+//   int main() {
+//     int number;
+//     std:: cout << "Type a number and i will give you a module of it: ";
+//     std:: cin >> number;
+//     if (number < 0) {
+//       number = - number;
+//     }
+    
+//     std:: cout << "The module of your number is: " << number;
+//   }
+
+// #include <iostream>
+
+// int main() {
+//   int menInDaCity;
+//   int barberInDaCity;
+//   int shift = 8;
+//   int days = 30;
+//   int oneBarberPower = shift * days;
+//   int barberNeed;
+
+//   std:: cout << "How many men in the city? ";
+//   std:: cin >> menInDaCity;
+//   std:: cout << "How many barbers in the city? ";
+//   std:: cin >> barberInDaCity;
+//   barberNeed = menInDaCity / oneBarberPower;
+//   std:: cout << barberInDaCity << " barbers can cut " << barberInDaCity * oneBarberPower << "\n";
+  
+  
+//   if (menInDaCity > barberInDaCity * oneBarberPower) {
+//     barberNeed += 1;
+//   }
+//   std:: cout << "You need " << barberNeed << " barbers \n";
+//   if (barberNeed > barberInDaCity) {
+//     std:: cout << "\n";
+//     std:: cout << "You need more barbers. Hire extra: " << barberNeed - barberInDaCity; }
+
+//   else if (barberNeed == barberInDaCity) {
+//     std:: cout << "Ecxactly enough barbers";
+//   }
+//     else {
+//     std:: cout << "\n";
+//     std:: cout << "You have enough barbers. You can live with them";
+
+//   }
+// }
+
+// #include <iostream>
+// int main()
+// {
+  
+// }
+
+#include <iostream>
+
+int main()
+{
+  int taxRate;
+  int income;
+  int taxToPay;
+  std::cout << "Enter your income: ";
+  std::cin >> income;
+
+  if (income < 10000) {
+    taxRate = 13;
+    taxToPay = income * taxRate / 100;
+    std::cout << "Your Tax Rate is: " << taxRate << "\n" << "You should pay: " << taxToPay;
+  }
+  else if (income < 50000) {
+    taxRate = 15;
+    taxToPay = income * taxRate / 100;
+    std::cout << "Your Tax Rate is: " << taxRate << "\n" << "You should pay: " << taxToPay;
+  }
+  else {
+    taxRate = 18;
+    taxToPay = income * taxRate / 100;
+    std::cout << "Your Tax Rate is: " << taxRate << "\n" << "You should pay: " << taxToPay;
+  }
+}
